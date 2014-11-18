@@ -16,7 +16,7 @@
 
 <body>
 <!-- top nav -->
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+<div class="navbar navbar-inverse" role="navigation" id="menu-nav">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,16 +29,15 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#ad-carousel">综述</a></li>
-                <li><a href="#summary-container">简述</a></li>
+                <li class="active"><a href="#summary-container">个人简述</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">特点 <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">简历<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#feature-tab" data-tab="tab-chrome">Chrome</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-firefox">Firefox</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-safari">Safari</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-opera">Opera</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-ie">IE</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-edu">教育</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-project">项目</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-experience">工作经验</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-technique">技能</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-hobby">兴趣爱好</a></li>
                     </ul>
                 </li>
                 <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
@@ -47,224 +46,203 @@
     </div>
 </div>
 
-
-<!-- 广告轮播 -->
-<div id="ad-carousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#ad-carousel" data-slide-to="1"></li>
-        <li data-target="#ad-carousel" data-slide-to="2"></li>
-        <li data-target="#ad-carousel" data-slide-to="3"></li>
-        <li data-target="#ad-carousel" data-slide-to="4"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="images/chrome-big.jpg" alt="1 slide">
-
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Chrome</h1>
-
-                    <p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
-
-                    <p><a class="btn btn-lg btn-primary" href="http://www.google.cn/intl/zh-CN/chrome/browser/"
-                          role="button" target="_blank">点我下载</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <img src="images/firefox-big.jpg" alt="2 slide">
-
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Firefox</h1>
-
-                    <p>Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器。</p>
-
-                    <p><a class="btn btn-lg btn-primary" href="http://www.firefox.com.cn/download/" target="_blank"
-                          role="button">点我下载</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <img src="images/safari-big.jpg" alt="3 slide">
-
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Safari</h1>
-
-                    <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器。</p>
-
-                    <p><a class="btn btn-lg btn-primary" href="http://www.apple.com/cn/safari/" target="_blank"
-                          role="button">点我下载</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <img src="images/opera-big.jpg" alt="4 slide">
-
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Opera</h1>
-
-                    <p>Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。</p>
-
-                    <p><a class="btn btn-lg btn-primary" href="http://www.opera.com/zh-cn" target="_blank"
-                          role="button">点我下载</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <img src="images/ie-big.jpg" alt="5 slide">
-
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>IE</h1>
-
-                    <p>Internet Explorer，简称 IE，是微软公司推出的一款网页浏览器。</p>
-
-                    <p><a class="btn btn-lg btn-primary" href="http://ie.microsoft.com/" target="_blank"
-                          role="button">点我下载</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
-            class="glyphicon glyphicon-chevron-left"></span></a>
-    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
-            class="glyphicon glyphicon-chevron-right"></span></a>
-</div>
-
-
 <!-- 主要内容 -->
-<div class="container summary">
 
+<div class="jumbotron">
+	<div class="media">
+	<a class="pull-left" >
+		<img class="img-circle" src="images/my_head.jpg" >
+	</a>
+		<div class="media-body">
+  			<h2 class="media-heading">大家好，欢迎来到我的空间, 我是一个程序猿<br>
+  				<small>如果想和我联系，请发信息到我邮箱chenliangxu68@gmail.com</small></h2>
+		</div>
+	</div>
+</div>
+<div class="container summary">
     <!-- 简介 -->
     <div class="row" id="summary-container">
-        <div class="col-md-4">
-            <img class="img-circle" src="images/chrome-logo-small.jpg" alt="chrome">
 
-            <h2>Chrome</h2>
-
-            <p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
-
-            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+        <div class="col-md-5">
+            <img src="images/code.png" alt="code">
+            <h2>编程</h2>
+            <p>我喜欢做一些东西在网络上.我有做游戏，工具和网络应用</p>
+            <p><a class="btn btn-default" href="#" role="button">看些例子</a></p>
         </div>
-        <div class="col-md-4">
-            <img class="img-circle" src="images/firefox-logo-small.jpg" alt="firefox">
 
-            <h2>Firefox</h2>
-
-            <p>Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器。</p>
-
-            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+        <div class="col-md-5">
+            <img src="images/product.png" alt="product">
+            <h2>产品</h2>
+            <p>我喜欢考虑产品从概念到需求，做出满足用户需求的产品</p>
+            <p><a class="btn btn-default" href="#" role="button">看些例子</a></p>
         </div>
-        <div class="col-md-4">
-            <img class="img-circle" src="images/safari-logo-small.jpg" alt="safari">
 
-            <h2>Safari</h2>
+        <div class="col-md-5">
+            <img src="images/design.png" alt="design">
+            <h2>设计</h2>
+            <p>我喜欢把事情做得整洁和漂亮</p>
+        </div>
 
-            <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器。</p>
-
-            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+        <div class="col-md-5">
+            <img src="images/analyssis.png" alt="analysis">
+            <h2>分析</h2>
+            <p>我喜欢观察和分析数据，挖掘潜在需求</p>
         </div>
     </div>
 
     <!-- 特性 -->
-
     <hr class="feature-divider">
-
     <ul class="nav nav-tabs" role="tablist" id="feature-tab">
-        <li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">Chrome</a></li>
-        <li><a href="#tab-firefox" role="tab" data-toggle="tab">Firefox</a></li>
-        <li><a href="#tab-safari" role="tab" data-toggle="tab">Safari</a></li>
-        <li><a href="#tab-opera" role="tab" data-toggle="tab">Opera</a></li>
-        <li><a href="#tab-ie" role="tab" data-toggle="tab">IE</a></li>
+        <li class="active"><a href="#tab-edu" role="tab" data-toggle="tab">教育</a></li>
+        <li><a href="#tab-project" role="tab" data-toggle="tab">项目</a></li>
+        <li><a href="#tab-experience" role="tab" data-toggle="tab">工作经验</a></li>
+        <li><a href="#tab-technique" role="tab" data-toggle="tab">技能</a></li>
+        <li><a href="#tab-hobby" role="tab" data-toggle="tab">爱好</a></li>
     </ul>
 
     <div class="tab-content">
-        <div class="tab-pane active" id="tab-chrome">
-            <div class="row feature">
-                <div class="col-md-7">
+        <div class="tab-pane active" id="tab-edu">
+        	<div class="well">
+	        	<div class="media">
+				<a class="pull-left" href="http://www.ensea.fr/">
+					<img src="images/ensea.png" >
+				</a>
+					<div class="media-body">
+			  			<h2 class="media-heading">ENSEA <small> 2012/09-2014/12 </small></h2>
+			  			<p class="lead">国立高等电子及其应用技术学院, 硕士, 信息与系统</p>
+					</div>
+				</div>
 
-                    <h2 class="feature-heading">Google Chrome <span
-                            class="text-muted">使用最广的浏览器</span></h2>
+				<div class="media">
+					<a class="pull-left" href="http://www.scnu.edu.cn/scnu/">
+						<img src="images/scnu.fw.png" >
+					</a>
+					<div class="media-body">
+			  			<h2 class="media-heading">SCNU <small> 2006/09-2010/06 </small></h2>
+			  			<p class="lead">华南师范大学, 工程学士, 信息工程</p>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="tab-pane" id="tab-project">
+            <div class="well">
+	        	<div class="panel panel-info">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">基于FPGA多核系统设计</h3>
+				  </div>
+				  <div class="panel-body">
+				  	<ul class="list-group">
+				  	<li class="list-group-item">时间:2013/10 - 2013/12 </li>
+				  	<li class="list-group-item">地点:ENESA</li>
+				  	<li class="list-group-item">技术:ModelSim, QUARTUS, VHDL, C</li>
+				  	<li class="list-group-item">内容:<p>在FPGA板上创建3个软核，设计控制程序为各核相互协同工作</p>
+					<p>项目为2人完成，我负责软核对数据处理和正确处理不同的响应</p></li>
+				    <li class="list-group-item">结果:可以把需要处理的信息拆分给3个软核同时运算，提高系统效率</li>
+					</ul>  
+				  </div>
+				  <div class="panel-heading">
+				    <h3 class="panel-title">制作棋盘游戏角力棋</h3>
+				  </div>
+				  <div class="panel-body">
+				  	<ul class="list-group">
+				  	<li class="list-group-item">时间:2013/10 - 2013/12 </li>
+				  	<li class="list-group-item">地点:ENESA</li>
+				  	<li class="list-group-item">技术:C++</li>
+				  	<li class="list-group-item">内容:使用SFML 库制作游戏画面，游戏能够人机对战</li>
+					</ul>  
+				  </div>
+				  <div class="panel-heading">
+				    <h3 class="panel-title">基于STM32的双足机器人</h3>
+				  </div>
+				  <div class="panel-body">
+				  	<ul class="list-group">
+				  	<li class="list-group-item">时间:2012/02 - 2013/05 </li>
+				  	<li class="list-group-item">地点:ENESA</li>
+				  	<li class="list-group-item">技术:EAGLE, C, VB</li>
+				  	<li class="list-group-item">内容:<p>通过单片机控制2个直流电动机，使机器人模仿人的行走</p>
+					<p>用VB设计一个软件平台，控制机器人的行走模式</p></li>
+				    <li class="list-group-item">结果:用电脑远程控制机器人的行走方向</li>
+					</ul>  
+				  </div>
+				</div>
+			</div>
+        </div>
+        <div class="tab-pane" id="tab-experience">
+           <div class="well">
+	        	<div class="media">
+				<a class="pull-left" href="http://www.multiposting.fr/">
+					<img src="images/multiposting.fw.png" >
+				</a>
+					<div class="media-body">
+			  			<h3 class="media-heading">网络系统开发程序员 <small> 2014/02-2014/07 </small></h3>
+			  			<ul class="list-group">
+					  	<li class="list-group-item">技术:python, Django, javaScript, SQL</li>
+					  	<li class="list-group-item">环境:Linux, JIRA, Githut, selenium</li>
+					  	<li class="list-group-item">内容:<p>编写脚本，帮助系统实现自动化处理问题</p>
+						<p>编写公司后台系统的工具管理</p><p>维护系统的日常运行，及时修复漏洞和错误</p></li>
+					    <li class="list-group-item">结果:自动化为客户在求职网站创建账号</li>
+						</ul> 
+					</div>
+				</div>
 
-                    <p class="lead">Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。
-                        该浏览器是基于其他开源软件所撰写，包括WebKit，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/chrome-logo.jpg"
-                         alt="Chrome">
-                </div>
+				<div class="media">
+					<a class="pull-left" href="http://www-etis.ensea.fr/">
+						<img src="images/etis.fw.png" >
+					</a>
+					<div class="media-body">
+			  			<h3 class="media-heading">FPGA系统开发程序员( <small> 2013/07-2013/08 </small></h3>
+			  			<ul class="list-group">
+					  	<li class="list-group-item">技术:Xilinx SDK, C</li>
+					  	<li class="list-group-item">环境:windows, Xilinx Virtex-6 FPGA</li>
+					  	<li class="list-group-item">内容:<p>配置 Xilinx Virtex-6 FPGA</p>
+						<p>把电脑上的LDPC算法转移到FPGA板上</p><p>测试LDPC算法的效果，并提出改进的方法</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="tab-pane" id="tab-technique">
+            <div class="well">
+            <div class="progress">
+			  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+			    <span class="sr-only">40% Complete (success)</span>C++, JAVA
+			  </div>
+			</div>
+			<div class="progress">
+			  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+			    <span class="sr-only">60% Complete (warning)</span>C, HTML, JavaScript, Ruby, PHP
+			  </div>
+			</div>
+			<div class="progress">
+			  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+			    <span class="sr-only">75% Complete (danger)</span>Python, Django
+			  </div>
+			</div>
+			<div class="progress">
+			  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+			    <span class="sr-only">70% Complete (primer)</span>English 托业:780
+			  </div>
+			</div>
+			<div class="progress">
+			  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+			    <span class="sr-only">80% Complete (warning)</span>French
+			  </div>
+			</div>
             </div>
         </div>
-        <div class="tab-pane" id="tab-firefox">
-            <div class="row feature">
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/firefox-logo.jpg"
-                         alt="Firefox">
-                </div>
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">Mozilla Firefox <span class="text-muted">美丽的狐狸</span>
-                    </h2>
-
-                    <p class="lead">Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器，
-                        使用Gecko引擎（非ie内核），支持多种操作系统如Windows、Mac和linux。</p>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-safari">
-            <div class="row feature">
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">Safari <span class="text-muted">Mac用户首选</span></h2>
-
-                    <p class="lead">Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。
-                        Safari在2003年1月7日首度发行测试版，并成为Mac OS X v10.3与之后的默认浏览器，也是iPhone与IPAD和iPod touch的指定浏览器。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/safari-logo.jpg"
-                         alt="Safari">
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-opera">
-            <div class="row feature">
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/opera-logo.jpg"
-                         alt="Opera">
-                </div>
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">Opera <span class="text-muted">小众但易用</span>
-                    </h2>
-
-                    <p class="lead">Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。
-                        是跨平台浏览器可以在Windows、Mac和Linux三个操作系统平台上运行。.</p>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-ie">
-            <div class="row feature">
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">IE <span class="text-muted">你懂的</span></h2>
-
-                    <p class="lead">Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet
-                        Explorer(7，8，9，10版本)，
-                        简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="images/ie-logo.jpg"
-                         alt="IE">
-                </div>
+        <div class="tab-pane" id="tab-hobby">
+            <div class="well">
+            	<ul class="list-group">
+			  	<li class="list-group-item">运动 : 远足， 游泳</li>
+			  	<li class="list-group-item">音乐 : 流行音乐，轻音乐</li>
+			  	<li class="list-group-item">文化 : 侦探小说， 画画</li>
+			  	<li class="list-group-item">其它 : 旅游，咏春</li>
+				</ul>
             </div>
         </div>
     </div>
 
-    <!-- 关于 -->
+    <!-- About -->
     <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
          aria-hidden="true">
         <div class="modal-dialog">
@@ -275,8 +253,7 @@
                     <h4 class="modal-title" id="modal-label">关于</h4>
                 </div>
                 <div class="modal-body">
-                    <p>慕课网隶属于北京慕课科技中心(有限合伙)，是一家从事互联网免费教学的网络教育公司。秉承“开拓、创新、公平、分享”的精神，
-                        将互联网特性全面的应用在教育领域，致力于为教育机构及求学者打造一站式互动在线教育品牌。</p>
+                    <p>本人陈良旭，专业是计算机与系统，熟悉网络应用程序开发，学校里面也做过嵌入式系统，热爱编程，喜欢产品开发，英语和法语流利，于2014年12月拿到硕士学位，努力需求一份工作</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
@@ -284,7 +261,6 @@
             </div>
         </div>
     </div>
-
 
     <footer>
         <p class="pull-right"><a href="#top">回到顶部</a></p>
@@ -298,7 +274,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script>
     $(function () {
-        $('#ad-carousel').carousel();
         $('#menu-nav .navbar-collapse a').click(function (e) {
             var href = $(this).attr('href');
             var tabId = $(this).attr('data-tab');
