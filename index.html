@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to CHEN Liangxu space</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="dist/jquery.bootstrap-autohidingnavbar.min.js"></script>
 
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -55,7 +56,7 @@
 	</a>
 		<div class="media-body">
   			<h2 class="media-heading">大家好，欢迎来到我的空间, 我是一个程序猿<br>
-  				<small>如果想和我联系，请发信息到我邮箱chenliangxu68@gmail.com</small></h2>
+  				<small>Stay hungry stay foolish</small></h2>
 		</div>
 	</div>
 </div>
@@ -67,14 +68,14 @@
             <img src="images/code.png" alt="code">
             <h2>编程</h2>
             <p>我喜欢做一些东西在网络上.我有做游戏，工具和网络应用</p>
-            <p><a class="btn btn-default" href="#" role="button">看些例子</a></p>
+            <p><a class="btn btn-default" href="https://github.com/CHENLiangxu" role="button">看些例子</a></p>
         </div>
 
         <div class="col-md-5">
             <img src="images/product.png" alt="product">
             <h2>产品</h2>
             <p>我喜欢考虑产品从概念到需求，做出满足用户需求的产品</p>
-            <p><a class="btn btn-default" href="#" role="button">看些例子</a></p>
+            <p><a class="btn btn-default" href="#accordion2" role="button">看些例子</a></p>
         </div>
 
         <div class="col-md-5">
@@ -90,7 +91,7 @@
         </div>
     </div>
 
-    <!-- 特性 -->
+    <!-- 简历 -->
     <hr class="feature-divider">
     <ul class="nav nav-tabs" role="tablist" id="feature-tab">
         <li class="active"><a href="#tab-edu" role="tab" data-toggle="tab">教育</a></li>
@@ -241,7 +242,115 @@
             </div>
         </div>
     </div>
-
+	<!-- 项目产品-->
+	<div class="panel panel-info">
+	<div class="accordion" id="accordion2">
+	  <div class="accordion-group">
+		<div class="panel-heading panel-info">
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+			网站开发
+		  </a>
+		</div>
+		</div>
+		<div class="panel-body">
+		<div id="collapseOne" class="accordion-body collapse in">
+		  <div class="accordion-inner">
+		    <div class="pull-left">
+			<div id="myCarousel" class="carousel slide" style="width: 180px; margin: 10 auto">
+			  <ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			  </ol>
+			  <!-- 旋转木马项目 -->
+			  <div class="carousel-inner">
+				<div class="active item">
+					<img src="images/site_phone.png" alt="">
+                    <div class="carousel-caption">
+                     <h4><strong>手机页面</strong></h4>
+                    </div>
+				</div>
+				<div class="item">
+                    <img src="images/site_pic.png" alt="">
+                    <div class="carousel-caption">
+                      <h4><strong>图片显示</strong></h4>
+                    </div>
+                </div>
+				<div class="item">
+					<img src="images/site_tablet.png" alt="">
+                    <div class="carousel-caption">
+                      <h4><strong>平板页面</strong></h4>
+                    </div>
+				</div>
+			  </div>
+			  <!-- 旋转木马导航 -->
+			  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div>
+			</div>
+			<div class="well">
+			<h2>极简风格的商业展示网站</h2>
+			<p>网站自动适应不同设备的屏幕尺寸，在任何时候都能展现最佳效果，通过扫描二维码获取网站，更能方便推广</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  </div>
+	  <div class="accordion-group">
+		<div class="panel-heading panel-info">
+		<div class="accordion-heading">
+		 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+			手机应用
+		  </a>
+		</div>
+		</div>
+		<div class="panel-body">
+		<div id="collapseTwo" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<div class="pull-left">
+			<div id="myCarouse2" class="carousel slide" style="width: 200px; margin: 10 auto">
+			  <ol class="carousel-indicators">
+				<li data-target="#myCarouse2" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarouse2" data-slide-to="1"></li>
+				<li data-target="#myCarouse2" data-slide-to="2"></li>
+			  </ol>
+			  <!-- 旋转木马项目 -->
+			  <div class="carousel-inner">
+				<div class="active item">
+					<img src="images/app_index.png" alt="">
+                    <div class="carousel-caption">
+                     <h4><strong>主页面</strong></h4>
+                    </div>
+				</div>
+				<div class="item">
+                    <img src="images/app_menu_1.png" alt="">
+                    <div class="carousel-caption">
+                      <h4><strong>菜单</strong></h4>
+                    </div>
+                </div>
+				<div class="item">
+					<img src="images/coupon.png" alt="">
+                    <div class="carousel-caption">
+                      <h4><strong>平板页面</strong></h4>
+                    </div>
+				</div>
+			  </div>
+			  <!-- 旋转木马导航 -->
+			  <a class="carousel-control left" href="#myCarouse2" data-slide="prev">&lsaquo;</a>
+			  <a class="carousel-control right" href="#myCarouse2" data-slide="next">&rsaquo;</a>
+			</div>
+			</div>
+		    <div class="well">
+			  <h2>基于网络的手机应用</h2>
+			  <p>手机应用支持Android和Iphone，通过网络及时更新内容，通过缓冲技术，当网络情况不好时候也能有非常快速的反应，比网页有更好的用户体验，通过扫描二维码获取网站，更能方便推广</p>
+		  </div>
+		</div>
+	   </div>
+		</div>
+	</div>
+    </div>
+    </div>
     <!-- About -->
     <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
          aria-hidden="true">
@@ -273,8 +382,8 @@
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-    $(function () {
-        $('#menu-nav .navbar-collapse a').click(function (e) {
+	$(function () {
+		$('#menu-nav .navbar-collapse a').click(function (e) {
             var href = $(this).attr('href');
             var tabId = $(this).attr('data-tab');
             if ('#' !== href) {
